@@ -1,0 +1,24 @@
+{
+  "name": "rename",
+  "version": "0.0.1",
+  "description": "Script Node.js for rename films and series episodes (plex directives)",
+  "scripts": {
+    "test": "mocha -u bdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zax/rename.git"
+  },
+  "keywords": [
+    "rename",
+    "series",
+    "films",
+    "plex"
+  ],
+  "author": "Zax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zax/rename/issues"
+  },
+  "homepage": "https://github.com/Zax/rename"
+}

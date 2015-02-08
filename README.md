@@ -1,2 +1,2 @@
-# Rename
+# rename
 Script Node.js for rename films and series episodes (plex directives)
