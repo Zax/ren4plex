@@ -10,21 +10,9 @@ var tools = {
             .substring(0, i)
             .replace(/DD5.1/gi,"")
             .replace(/\./g," ")
-            .replace(/-TrTd_Team/gi,"")
             .replace(/_/g," ")
             .replace(/ - /g," ")
-            .replace(/720p/gi,"")
-            .replace(/1080p/gi,"")
-            .replace(/x264/gi,"")
-            .replace(/x265/gi,"")
-            .replace(/HEVC/gi,"")
-            .replace(/h264/gi,"")
-            .replace(/h265/gi,"")
-            .replace(/xvid/gi,"")
             .replace(/HDTV/gi,"")
-            .replace(/BDMux/gi,"")
-            .replace(/DLMux/gi,"")
-            .replace(/ITA-ENG/gi,"")
             .replace(/S01E/gi,"1x")
             .replace(/S02E/gi,"2x")
             .replace(/S03E/gi,"3x")
@@ -34,12 +22,7 @@ var tools = {
             .replace(/S07E/gi,"7x")
             .replace(/S08E/gi,"8x")
             .replace(/S09E/gi,"9x")
-            .replace(/iTALiAN/gi,"")
-            .replace(/Sub /gi,"")
-            .replace(/ ITA /gi,"")
-            .replace(/(ITA )/gi,"")
             .replace(/Ita-Jap/gi,"")
-            .replace(/ ENG /gi,"")
             .replace(/AC3/gi,"")
             .replace(/aac/gi,"")
             .replace(/Mp3/gi,"")
@@ -119,28 +102,57 @@ var tools = {
         return (i < 0) ? '' : filename.substr(i);
     },
 
+    parseEpisode: function (word, filename){
+
+        if (filename.indexOf('lol') > -1){
+            var int = parseInt(word);
+            if (int > 99 && int < 9999){
+                var s = Math.floor(int / 100);
+                var e = int - (s * 100);
+                return  's' + ('0' + s).slice(-2) + 'e' + ('0' + e).slice(-2);
+            }
+        }
+        var xPos = word.toLowerCase().indexOf('x');
+        if (xPos > -1){
+            var s = parseInt(word.substr(0,xPos));
+            var e = parseInt(word.substr(xPos + 1));
+            return  's' + ('0' + s).slice(-2) + 'e' + ('0' + e).slice(-2);
+        }
+        return '';
+    },
+
     parseFilename: function (filename){
         // find extension
         var i = filename.lastIndexOf('.');
         var extension = (i > -1) ? filename.substr(i) : '';
-        var worlds = i == -1 ?
+        var words = i == -1 ?
             filename.split(config.splitChars) :
             filename.substr(0,i).split(config.splitChars);
         var result = '';
         var year = '';
-        for (var i = 0; i < worlds.length; i++) {
+        var episode = '';
+        for (var i = 0; i < words.length; i++) {
             // word not on ignore list
-            if (config.ignoreWords.indexOf(worlds[i]) != -1) continue;
+            if (config.ignoreWords.indexOf(words[i]) != -1) continue;
             // check if is year
             if (config.parseYear){
-                var int = parseInt(worlds[i]);
+                var int = parseInt(words[i]);
                 if (int != NaN && int > 1900 && int <= new Date().getFullYear()){
                     year = config.separator + '(' + int + ')';
                     continue;
                 }
             }
+            // check if episode
+            if (config.parseEpisode && episode == ''){
+                episode = this.parseEpisode(words[i], filename);
+                if (episode != '') {
+                    result += (result.length > 0 ? config.separator : '') + episode;
+                    continue;
+                }
+            }
+            // add word to result
             result += (result.length > 0 ? config.separator : '') +
-            (config.capitaliseFirstLetter ? this.capitaliseFirstLetter(worlds[i]) : worlds[i]);
+            (config.capitaliseFirstLetter ? this.capitaliseFirstLetter(words[i]) : words[i]);
         }
         return result + year + extension;
     }

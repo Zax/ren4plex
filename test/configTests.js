@@ -17,6 +17,7 @@ describe('config', function(){
                 { in: 'a!b', out: ['a','b'] },
                 { in: 'a[b', out: ['a','b'] },
                 { in: 'a]b', out: ['a','b'] },
+                { in: 'a+b', out: ['a','b'] },
             ];
 
             for (var i = 0; i < testCases.length; i++) {
