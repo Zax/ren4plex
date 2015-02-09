@@ -92,17 +92,19 @@ var tools = {
         return filename + extension;
     },
 
-    capitaliseFirstLetter: function(string)
-    {
+    // Capitalise the first letter
+    capitaliseFirstLetter: function(string) {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
     },
 
+    // Extract extension from filename
     getExtension: function (filename) {
         var i = filename.lastIndexOf('.');
         return (i < 0) ? '' : filename.substr(i);
     },
 
-    parseEpisode: function (word, filename){
+    // Extract episode string from word (if match)
+    getEpisode: function (word, filename){
 
         if (filename.indexOf('lol') > -1){
             var int = parseInt(word);
@@ -129,7 +131,8 @@ var tools = {
         return '';
     },
 
-    checkIgnored: function (word){
+    // Check if the word must be ignored
+    isIgnored: function (word){
         word = word.toLowerCase();
         for (var i = 0; i < config.ignoreWords.length; i++) {
             if (config.ignoreWords[i].toLowerCase() === word){
@@ -139,6 +142,7 @@ var tools = {
         return false;
     },
 
+    // Parse file name
     parseFilename: function (filename){
         // find extension
         var i = filename.lastIndexOf('.');
@@ -151,7 +155,7 @@ var tools = {
         var episode = '';
         for (var i = 0; i < words.length; i++) {
             // word not on ignore list
-            if (this.checkIgnored(words[i])) continue;
+            if (this.isIgnored(words[i])) continue;
             // check if is year
             if (config.parseYear){
                 var int = parseInt(words[i]);
@@ -162,7 +166,7 @@ var tools = {
             }
             // check if episode
             if (config.parseEpisode && episode == ''){
-                episode = this.parseEpisode(words[i], filename);
+                episode = this.getEpisode(words[i], filename);
                 if (episode != '') {
                     result += (result.length > 0 ? config.separator : '') + episode;
                     continue;
