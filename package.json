@@ -1,5 +1,5 @@
 {
-  "name": "rename",
+  "name": "ren4plex",
   "version": "0.0.1",
   "description": "Script Node.js for rename films and series episodes (plex directives)",
   "scripts": {

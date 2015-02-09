@@ -28,8 +28,13 @@ describe('tools', function(){
                 {
                     in:  'Continuum.3X06.Una.Decisione.Difficile.ITA.ENG.720p.BDMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
                     out: 'Continuum s03e06 Una Decisione Difficile.mkv'
+                },
+                {
+                    in:  '[DLMux 720p - H264 - Ita Mp3] Elementary S03e05.by.IperB.mkv',
+                    out: 'Elementary s03e05.mkv'
                 }
             ];
+
             for (var i = 0; i < testCases.length; i++) {
                 assert.equal(tools.parseFilename(testCases[i].in), testCases[i].out);
             }

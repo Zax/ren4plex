@@ -112,13 +112,31 @@ var tools = {
                 return  's' + ('0' + s).slice(-2) + 'e' + ('0' + e).slice(-2);
             }
         }
+        // x format (es. 2x11, 1X07)
         var xPos = word.toLowerCase().indexOf('x');
         if (xPos > -1){
             var s = parseInt(word.substr(0,xPos));
             var e = parseInt(word.substr(xPos + 1));
             return  's' + ('0' + s).slice(-2) + 'e' + ('0' + e).slice(-2);
         }
+        // s format (es. s02e11, S01E07)
+        var match = /s\d\de\d\d/i.exec(word);
+        if (match){
+            var s = parseInt(word.substr(1,2));
+            var e = parseInt(word.substr(4,2));
+            return  's' + ('0' + s).slice(-2) + 'e' + ('0' + e).slice(-2);
+        }
         return '';
+    },
+
+    checkIgnored: function (word){
+        word = word.toLowerCase();
+        for (var i = 0; i < config.ignoreWords.length; i++) {
+            if (config.ignoreWords[i].toLowerCase() === word){
+                return true;
+            }
+        }
+        return false;
     },
 
     parseFilename: function (filename){
@@ -133,7 +151,7 @@ var tools = {
         var episode = '';
         for (var i = 0; i < words.length; i++) {
             // word not on ignore list
-            if (config.ignoreWords.indexOf(words[i]) != -1) continue;
+            if (this.checkIgnored(words[i])) continue;
             // check if is year
             if (config.parseYear){
                 var int = parseInt(words[i]);
