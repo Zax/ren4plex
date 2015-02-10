@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var ren4plex = {
 
     // config
