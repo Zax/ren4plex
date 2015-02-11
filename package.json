@@ -1,0 +1,32 @@
+{
+  "name": "ren4plex",
+  "version": "0.0.7",
+  "description": "Script Node.js for rename films and series episodes (plex directives)",
+  "scripts": {
+    "test": "mocha -u bdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zax/ren4plex.git"
+  },
+  "keywords": [
+    "rename",
+    "series",
+    "films",
+    "plex"
+  ],
+  "author": "Zax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zax/ren4plex/issues"
+  },
+  "homepage": "https://github.com/Zax/ren4plex",
+  "main": "lib/ren4plex",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "ren4plex": "lib/ren4plex.js"
+  }
+}
