@@ -1,5 +1,5 @@
 var assert = require("assert");
-var ren4plex = require('../ren4plex');
+var ren4plex = require('../lib/ren4plex');
 
 describe('ren4plex', function(){
 
