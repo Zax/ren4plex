@@ -53,8 +53,11 @@ describe('ren4plex', function(){
                     out: 'Elementary s01e01.mkv'}
                 ,{  in:  'Jane.The.Virgin.S01E01.PROPER.HDTV.x264-2HD.mp4',
                     out: 'Jane The Virgin s01e01.mp4'}
+                ,{  in:  'Gotham.S01E11.Rogues.Gallery.720p.WEB-DL.2CH.x265.HEVC-AlgernonWood.mkv',
+                    out: 'Gotham s01e11 Rogues Gallery.mkv'}
+                ,{  in:  'Marvels.Agents.of.S.H.I.E.L.D.S02E08.720p.WEB-DL.2CH.x265.AlgernonWood.mkv',
+                    out: 'Marvels Agents Of S H I E L D s02e08.mkv'}
             ];
-
             for (var i = 0; i < testCases.length; i++) {
                 assert.equal(ren4plex.getFilename(testCases[i].in), testCases[i].out);
             }
