@@ -28,5 +28,8 @@
   "preferGlobal": "true",
   "bin": {
     "ren4plex": "lib/ren4plex.js"
+  },
+  "dependencies": {
+    "commander": "^2.6.0"
   }
 }
