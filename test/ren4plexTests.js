@@ -59,7 +59,11 @@ describe('ren4plex', function(){
                     out: 'Marvels Agents Of S H I E L D s02e08.mkv'}
                 ,{  in:  'Once.Upon.A.Time.4X07.La.Regina.Delle.Nevi.ITA.ENG.720p.WEB-DLMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
                     out: 'Once Upon A Time s04e07 La Regina Delle Nevi.mkv'}
+                ,{  in:  'Lucy.2014.iTA-ENG.Bluray.720p.x264-TRL.mkv',
+                    out: 'Lucy (2014).mkv'}
             ];
+
+
             for (var i = 0; i < testCases.length; i++) {
                 assert.equal(ren4plex.getFilename(testCases[i].in), testCases[i].out);
             }
