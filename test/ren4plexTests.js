@@ -45,6 +45,8 @@ describe('ren4plex', function(){
             var testCases = [
                 {   in:  'A.Proposito.di.Davis.(2013).1080p.BluRay.Dts.ITA.ENG.Subs.x264.mkv',
                     out: 'A Proposito Di Davis (2013).mkv'}
+                ,{  in:  'Lucy.2014.iTA-ENG.Bluray.720p.x264-TRL.mkv',
+                    out: 'Lucy (2014).mkv'}
                 ,{  in:  'the.originals.101.hdtv-lol.mp4',
                     out: 'The Originals s01e01.mp4'}
                 ,{  in:  'Continuum.3X06.Una.Decisione.Difficile.ITA.ENG.720p.BDMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
@@ -59,9 +61,11 @@ describe('ren4plex', function(){
                     out: 'Marvels Agents Of S H I E L D s02e08.mkv'}
                 ,{  in:  'Once.Upon.A.Time.4X07.La.Regina.Delle.Nevi.ITA.ENG.720p.WEB-DLMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
                     out: 'Once Upon A Time s04e07 La Regina Delle Nevi.mkv'}
-                ,{  in:  'Lucy.2014.iTA-ENG.Bluray.720p.x264-TRL.mkv',
-                    out: 'Lucy (2014).mkv'}
+                ,{  in:  'Person.of.Interest.4X03.L.Esperto.Di.Donne.ITA.ENG.720p.Web-DMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
+                    out: 'Person Of Interest s04e03 L Esperto Di Donne.mkv'}
             ];
+
+
 
 
             for (var i = 0; i < testCases.length; i++) {
