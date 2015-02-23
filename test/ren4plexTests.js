@@ -63,9 +63,9 @@ describe('ren4plex', function(){
                     out: 'Once Upon A Time s04e07 La Regina Delle Nevi.mkv'}
                 ,{  in:  'Person.of.Interest.4X03.L.Esperto.Di.Donne.ITA.ENG.720p.Web-DMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
                     out: 'Person Of Interest s04e03 L Esperto Di Donne.mkv'}
+                ,{  in:  'Hart.of.Dixie.S04E06.HDTV.x264-LOL.mp4',
+                    out: 'Hart Of Dixie s04e06.mp4'}
             ];
-
-
 
 
             for (var i = 0; i < testCases.length; i++) {
