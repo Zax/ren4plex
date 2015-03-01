@@ -47,6 +47,8 @@ describe('ren4plex', function(){
                     out: 'A Proposito Di Davis (2013).mkv'}
                 ,{  in:  'Lucy.2014.iTA-ENG.Bluray.720p.x264-TRL.mkv',
                     out: 'Lucy (2014).mkv'}
+                ,{  in:  'Boxtrolls-Le.Scatole.Magiche.2014.DTS.ITA.ENG.1080p.BluRay.x264-BLUWORLD.mkv',
+                    out: 'Boxtrolls Le Scatole Magiche (2014).mkv'}
                 ,{  in:  'the.originals.101.hdtv-lol.mp4',
                     out: 'The Originals s01e01.mp4'}
                 ,{  in:  'Continuum.3X06.Una.Decisione.Difficile.ITA.ENG.720p.BDMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
@@ -70,7 +72,6 @@ describe('ren4plex', function(){
                 ,{  in:  'Revenge.4X03.Ceneri.ITA.ENG.720p.WEB-DLMux.H.265-iGM.GiuseppeTnT-Marco_kh.mkv',
                     out: 'Revenge s04e03 Ceneri.mkv'}
             ];
-
 
             for (var i = 0; i < testCases.length; i++) {
                 assert.equal(ren4plex.getFilename(testCases[i].in), testCases[i].out);
