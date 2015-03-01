@@ -65,6 +65,10 @@ describe('ren4plex', function(){
                     out: 'Person Of Interest s04e03 L Esperto Di Donne.mkv'}
                 ,{  in:  'Hart.of.Dixie.S04E06.HDTV.x264-LOL.mp4',
                     out: 'Hart Of Dixie s04e06.mp4'}
+                ,{  in:  '[Mux - 720p - H264 - Ita Eng Mp3 - sub Ita Eng] The Blacklist S02e03 - Dr James Covington.by.IperB.mkv',
+                    out: 'The Blacklist s02e03 Dr James Covington.mkv'}
+                ,{  in:  'Revenge.4X03.Ceneri.ITA.ENG.720p.WEB-DLMux.H.265-iGM.GiuseppeTnT-Marco_kh.mkv',
+                    out: 'Revenge s04e03 Ceneri.mkv'}
             ];
 
 
