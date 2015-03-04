@@ -60,7 +60,7 @@ describe('ren4plex', function(){
                 ,{  in:  'Gotham.S01E11.Rogues.Gallery.720p.WEB-DL.2CH.x265.HEVC-AlgernonWood.mkv',
                     out: 'Gotham s01e11 Rogues Gallery.mkv'}
                 ,{  in:  'Marvels.Agents.of.S.H.I.E.L.D.S02E08.720p.WEB-DL.2CH.x265.AlgernonWood.mkv',
-                    out: 'Marvels Agents Of S H I E L D s02e08.mkv'}
+                    out: 'Marvels Agents Of Shield s02e08.mkv'}
                 ,{  in:  'Once.Upon.A.Time.4X07.La.Regina.Delle.Nevi.ITA.ENG.720p.WEB-DLMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
                     out: 'Once Upon A Time s04e07 La Regina Delle Nevi.mkv'}
                 ,{  in:  'Person.of.Interest.4X03.L.Esperto.Di.Donne.ITA.ENG.720p.Web-DMux.x265.HEVC-iGM+GiuseppeTnT+Marco_kh.mkv',
@@ -69,6 +69,8 @@ describe('ren4plex', function(){
                     out: 'Hart Of Dixie s04e06.mp4'}
                 ,{  in:  '[Mux - 720p - H264 - Ita Eng Mp3 - sub Ita Eng] The Blacklist S02e03 - Dr James Covington.by.IperB.mkv',
                     out: 'The Blacklist s02e03 Dr James Covington.mkv'}
+                ,{  in:  'Marvels.Agents.of.S.H.I.E.L.D.S02E11.HDTV.x264-KILLERS.[VTV].mp4',
+                    out: 'Marvels Agents Of Shield s02e11.mp4'}
                 ,{  in:  'Revenge.4X03.Ceneri.ITA.ENG.720p.WEB-DLMux.H.265-iGM.GiuseppeTnT-Marco_kh.mkv',
                     out: 'Revenge s04e03 Ceneri.mkv'}
             ];
@@ -78,6 +80,19 @@ describe('ren4plex', function(){
             }
 
         })
+        it('should parse name correctly, debug', function(){
+
+            var testCases = [
+                {  in:  'Revenge.4X03.Ceneri.ITA.ENG.720p.WEB-DLMux.H.265-iGM.GiuseppeTnT-Marco_kh.mkv',
+                    out: 'Revenge s04e03 Ceneri.mkv'}
+            ];
+
+            for (var i = 0; i < testCases.length; i++) {
+                assert.equal(ren4plex.getFilename(testCases[i].in), testCases[i].out);
+            }
+
+        })
+
     })
 
 })
