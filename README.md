@@ -5,11 +5,15 @@ Script Node.js for rename films and series episodes, following plex directives.
 npm install ren4plex -g
 
 ### Usage
-`node ren4plex [path] [previewMode]`
 
-or
+`ren4plex ren4plex [options] [path]`
 
-`ren4plex [path] [previewMode]`
+ Options:
+
+    -h, --help     output usage information
+    -v, --version  output the version number
+    -p, --preview  Preview mode (don't rename)
+
 
 ### Renamed Examples
 
