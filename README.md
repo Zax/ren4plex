@@ -6,7 +6,7 @@ npm install ren4plex -g
 
 ### Usage
 
-`ren4plex ren4plex [options] [path]`
+`ren4plex [options] [path]`
 
  Options:
 
