@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Zax/ren4plex.svg?branch=master)](http://Zax/ren4plex.svg)
+
 # ren4plex - Rename for Plex
 Script Node.js for rename films and series episodes, following plex directives.
 
