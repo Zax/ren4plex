@@ -19,6 +19,8 @@ npm install ren4plex -g
 
 #### Films
 * A.Proposito.di.Davis.(2013).1080p.BluRay.Dts.ITA.ENG.Subs.x264.mkv -> A Proposito Di Davis (2013).mkv
+* Lucy.2014.iTA-ENG.Bluray.720p.x264-TRL.mkv -> Lucy (2014).mkv
+* Boxtrolls-Le.Scatole.Magiche.2014.DTS.ITA.ENG.1080p.BluRay.x264-BLUWORLD.mkv -> Boxtrolls Le Scatole Magiche (2014).mkv
 
 #### Series
 * the.originals.101.hdtv-lol.mp4 -> The Originals s01e01.mp4
