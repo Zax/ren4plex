@@ -33,6 +33,7 @@
     "commander": "^2.6.0"
   },
   "devDependencies": {
+    "it-each": "^0.3.0",
     "mocha": "^2.1.0"
   }
 }
