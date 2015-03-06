@@ -23,7 +23,7 @@
   "homepage": "https://github.com/Zax/ren4plex",
   "main": "lib/ren4plex",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.08"
   },
   "preferGlobal": "true",
   "bin": {
@@ -31,5 +31,8 @@
   },
   "dependencies": {
     "commander": "^2.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
   }
 }
