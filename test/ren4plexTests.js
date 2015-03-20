@@ -46,8 +46,8 @@ describe('ren4plex', function(){
                 out: 'A Proposito Di Davis (2013).mkv'}
             ,{  in:  'Lucy.2014.iTA-ENG.Bluray.720p.x264-TRL.mkv',
                 out: 'Lucy (2014).mkv'}
-            ,{  in:  '2001 A Space Odyssey 1968 1080p Blu-ray Ita Eng x265-NAHOM.mkv',
-                out: '2001 A Space Odyssey (1968).mkv'}
+            ,{  in:  'Super 8 (2011) BDRip x265 ENG-ITA Aac subs -Shiv@.mkv',
+                out: 'Super 8 (2011).mkv'}
             ,{  in:  'Boxtrolls-Le.Scatole.Magiche.2014.DTS.ITA.ENG.1080p.BluRay.x264-BLUWORLD.mkv',
                 out: 'Boxtrolls Le Scatole Magiche (2014).mkv'}
             ,{  in:  'the.originals.101.hdtv-lol.mp4',
