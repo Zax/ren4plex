@@ -74,6 +74,8 @@ describe('ren4plex', function(){
                 out: 'Marvels Agents Of Shield s02e11.mp4'}
             ,{  in:  'Revenge.4X03.Ceneri.ITA.ENG.720p.WEB-DLMux.H.265-iGM.GiuseppeTnT-Marco_kh.mkv',
                 out: 'Revenge s04e03 Ceneri.mkv'}
+            ,{  in:  'Arrow.3X01.Calma.Apparente.ITA.ENG.720p.WEB-DLMux.H.264-iGM.GiuseppeTnT.mkv',
+                out: 'Arrow s03e01 Calma Apparente.mkv'}
         ];
 
         it.each(testCases,'should rename "%s" -> "%s"', ['in','out'], function(element){
