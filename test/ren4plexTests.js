@@ -76,6 +76,8 @@ describe('ren4plex', function(){
                 out: 'Revenge s04e03 Ceneri.mkv'}
             ,{  in:  'Arrow.3X01.Calma.Apparente.ITA.ENG.720p.WEB-DLMux.H.264-iGM.GiuseppeTnT.mkv',
                 out: 'Arrow s03e01 Calma Apparente.mkv'}
+            ,{  in:  'Marvels.Daredevil.S01E07.WEBRiP.x264-QCF.mp4',
+                out: 'Marvels Daredevil s01e07.mp4'}
         ];
 
         it.each(testCases,'should rename "%s" -> "%s"', ['in','out'], function(element){
