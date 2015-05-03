@@ -78,6 +78,8 @@ describe('ren4plex', function(){
                 out: 'Arrow s03e01 Calma Apparente.mkv'}
             ,{  in:  'Marvels.Daredevil.S01E07.WEBRiP.x264-QCF.mp4',
                 out: 'Marvels Daredevil s01e07.mp4'}
+            ,{  in:  'Game Of Thrones S05E02 DLMux 720p H264 Ita Ac3 2.0 Eng Ac3 5.1 Sub Ita Eng By BlackBit.mkv',
+                out: 'Game Of Thrones s05e02.mkv'}
         ];
 
         it.each(testCases,'should rename "%s" -> "%s"', ['in','out'], function(element){
