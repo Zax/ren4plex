@@ -30,6 +30,7 @@
     "ren4plex": "lib/ren4plex.js"
   },
   "dependencies": {
+    "colors": "^1.1.0",
     "commander": "^2.6.0"
   },
   "devDependencies": {
