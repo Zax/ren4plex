@@ -12,10 +12,10 @@ npm install ren4plex -g
 
  Options:
 
-    -h, --help     output usage information
-    -v, --version  output the version number
-    -p, --preview  Preview mode (don't rename)
-
+    -h, --help      output usage information
+    -v, --version   output the version number
+    -p, --preview   Preview mode (don't rename)
+    -r, --recursive Recurse on all sub-directories
 
 ### Renamed Examples
 
