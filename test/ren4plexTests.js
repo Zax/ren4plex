@@ -80,6 +80,8 @@ describe('ren4plex', function(){
                 out: 'Marvels Daredevil s01e07.mp4'}
             ,{  in:  'Game Of Thrones S05E02 DLMux 720p H264 Ita Ac3 2.0 Eng Ac3 5.1 Sub Ita Eng By BlackBit.mkv',
                 out: 'Game Of Thrones s05e02.mkv'}
+            ,{  in:  'The.Imitation.Game.2014.iTALiAN.AC3.BluRay.1080p.x264-iDN_CreW.mkv',
+                out: 'The Imitation Game (2014).mkv'}
         ];
 
         it.each(testCases,'should rename "%s" -> "%s"', ['in','out'], function(element){
