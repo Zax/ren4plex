@@ -30,5 +30,3 @@ npm install ren4plex -g
 * [DLMux 720p - H264 - Ita Mp3] Elementary S01e01.by.IperB.mkv -> Elementary s01e01.mkv
 * Jane.The.Virgin.S01E01.PROPER.HDTV.x264-2HD.mp4 -> Jane The Virgin s01e01.mp4
 
-![Alt text](/screenshot.jpg?raw=true "Screenshot")
-
