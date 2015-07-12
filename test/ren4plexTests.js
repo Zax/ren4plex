@@ -82,6 +82,9 @@ describe('ren4plex', function(){
                 out: 'Game Of Thrones s05e02.mkv'}
             ,{  in:  'The.Imitation.Game.2014.iTALiAN.AC3.BluRay.1080p.x264-iDN_CreW.mkv',
                 out: 'The Imitation Game (2014).mkv'}
+            ,{  in:  'Ex.Machina.2015.iTA-ENG.Bluray.720p.x264-iCV.mkv',
+                out: 'Ex Machina (2015).mkv'}
+
         ];
 
         it.each(testCases,'should rename "%s" -> "%s"', ['in','out'], function(element){
