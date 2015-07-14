@@ -1,6 +1,6 @@
 {
   "name": "ren4plex",
-  "version": "0.14.7",
+  "version": "0.14.8",
   "description": "Script Node.js for rename films and series episodes (plex directives)",
   "scripts": {
     "test": "mocha"
