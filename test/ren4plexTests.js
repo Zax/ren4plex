@@ -84,6 +84,8 @@ describe('ren4plex', function(){
                 out: 'The Imitation Game (2014).mkv'}
             ,{  in:  'Ex.Machina.2015.iTA-ENG.Bluray.720p.x264-iCV.mkv',
                 out: 'Ex Machina (2015).mkv'}
+            ,{  in:  'Downton.Abbey.S06E02.HDTV.x264-ORGANiC.mp4',
+                out: 'Downton Abbey s06e02.mp4'}
 
         ];
 
