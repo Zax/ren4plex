@@ -20,7 +20,7 @@ describe('ren4plex', function(){
                     { in: 'a!b', out: ['a','b'] },
                     { in: 'a[b', out: ['a','b'] },
                     { in: 'a]b', out: ['a','b'] },
-                    { in: 'a+b', out: ['a','b'] },
+                    { in: 'a+b', out: ['a','b'] }
                 ];
 
                 for (var i = 0; i < testCases.length; i++) {
@@ -30,14 +30,14 @@ describe('ren4plex', function(){
 
         })
 
-    })
+    });
 
     describe('#getExtension()', function(){
 
         it('file.name.mp4 -> .mp4', function(){
             assert.equal(ren4plex.getExtension('file.name.mp4'), '.mp4');
         })
-    })
+    });
 
     describe('#getFilename()', function(){
 
@@ -86,6 +86,8 @@ describe('ren4plex', function(){
                 out: 'Ex Machina (2015).mkv'}
             ,{  in:  'Downton.Abbey.S06E02.HDTV.x264-ORGANiC.mp4',
                 out: 'Downton Abbey s06e02.mp4'}
+            ,{  in:  'Ep 01 L\'attacco Dell\'angelo Neon Genesis Evangelion Y99dr4s1l 5ys73m Hditaly (1995).mkv',
+                out: 'Ep 01 L\'attacco Dell\'angelo Neon Genesis Evangelion (1995).mkv'}
 
         ];
 
@@ -95,4 +97,4 @@ describe('ren4plex', function(){
 
     })
 
-})
+});
