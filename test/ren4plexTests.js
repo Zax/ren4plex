@@ -88,6 +88,8 @@ describe('ren4plex', function(){
                 out: 'Downton Abbey s06e02.mp4'}
             ,{  in:  'Ep 01 L\'attacco Dell\'angelo Neon Genesis Evangelion Y99dr4s1l 5ys73m Hditaly (1995).mkv',
                 out: 'Ep 01 L\'attacco Dell\'angelo Neon Genesis Evangelion (1995).mkv'}
+            ,{  in:  'Marvels.Jessica.Jones.1x01.Le.Signore.Bevono.Gratis.ITA.ENG.720p.WEBMux.x264-GiuseppeTnT.mkv',
+                out: 'Marvels Jessica Jones s01e01 Le Signore Bevono Gratis.mkv'}
 
         ];
 
