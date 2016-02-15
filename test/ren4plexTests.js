@@ -90,6 +90,8 @@ describe('ren4plex', function(){
                 out: 'Ep 01 L\'attacco Dell\'angelo Neon Genesis Evangelion (1995).mkv'}
             ,{  in:  'Marvels.Jessica.Jones.1x01.Le.Signore.Bevono.Gratis.ITA.ENG.720p.WEBMux.x264-GiuseppeTnT.mkv',
                 out: 'Marvels Jessica Jones s01e01 Le Signore Bevono Gratis.mkv'}
+            ,{  in:  'The.Shannara.Chronicles.1x01-02.Gli.Eletti.ITA.DLMux.x264-UBi.mkv',
+                out: 'The Shannara Chronicles s01e01 02 Gli Eletti.mkv'}
 
         ];
 
