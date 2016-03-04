@@ -92,10 +92,15 @@ describe('ren4plex', function(){
                 out: 'Marvels Jessica Jones s01e01 Le Signore Bevono Gratis.mkv'}
             ,{  in:  'The.Shannara.Chronicles.1x01-02.Gli.Eletti.ITA.DLMux.x264-UBi.mkv',
                 out: 'The Shannara Chronicles s01e01 02 Gli Eletti.mkv'}
+            ,{  in:  'The.Shannara.Chronicles.1x01.Gli.Eletti.ITA.DLMux.x264-UBi.mkv',
+                out: 'The Shannara Chronicles s01e01.mkv', removeTitle: true }
 
         ];
 
-        it.each(testCases,'should rename "%s" -> "%s"', ['in','out'], function(element){
+        it.each(testCases,'should rename "%s" on "%s"', ['in','out'], function(element){
+            if (element.removeTitle){
+                ren4plex.config.removeTitle = true;
+            }
             assert.equal(ren4plex.getFilename(element.in), element.out);
         })
 
