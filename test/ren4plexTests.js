@@ -94,6 +94,8 @@ describe('ren4plex', function(){
                 out: 'The Shannara Chronicles s01e01 02 Gli Eletti.mkv'}
             ,{  in:  'The.Shannara.Chronicles.1x01.Gli.Eletti.ITA.DLMux.x264-UBi.mkv',
                 out: 'The Shannara Chronicles s01e01.mkv', removeTitle: true }
+            ,{  in:  'Title.without.episode.info.mkv',
+                out: 'Title Without Episode Info.mkv',  removeTitle: true}
 
         ];
 
