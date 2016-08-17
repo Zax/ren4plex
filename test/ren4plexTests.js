@@ -96,6 +96,10 @@ describe('ren4plex', function(){
                 out: 'The Shannara Chronicles s01e01.mkv', removeTitle: true }
             ,{  in:  'Title.without.episode.info.mkv',
                 out: 'Title Without Episode Info.mkv',  removeTitle: true}
+            ,{  in:  'Batman Begins (2005) BDRip 1080p HEVC ITA ENG AC3 by soulwaxx.mkv',
+                out: 'Batman Begins (2005).mkv'}
+
+
 
         ];
 
