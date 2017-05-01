@@ -153,6 +153,10 @@ describe('ren4plex', function () {
             , {
                 in: 'Batman Begins (2005) BDRip 1080p HEVC ITA ENG AC3 by soulwaxx.mkv',
                 out: 'Batman Begins (2005).mkv'
+            },
+            {
+                in: 'L.Ora.Legale.2017.iTALiAN.Bluray.720p.x264-HDi.mkv',
+                out: 'L Ora Legale (2017).mkv'
             }
 
 
